@@ -7,47 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7FA9362C4666C02A3B9ED0DE73807DBB /* Pods-AppLoadTime-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF459CFFA4B38F9E5963BF7B630D21A /* Pods-AppLoadTime-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA3EE980C6023B70B6ACC1B3615438C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		AEA61914DF1A87770804B418EDB8386E /* Pods-AppLoadTime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC42C1C5FE0836A9AE556C7FC11985C /* Pods-AppLoadTime-dummy.m */; };
+		1CD795C0EED0FE842291E635855153FD /* NSTimeZone+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630800FB1E99328737247245FCB4F07 /* NSTimeZone+SwiftDate.swift */; };
+		1FAE5B40D783825186381AD0895A94DA /* NSDateFormatter+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944404B27E8071B5368BB75DBB6E68F1 /* NSDateFormatter+SwiftDate.swift */; };
+		219256A70412E64CB39D5D7A5AA3B489 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		247A8D6BEEA4BB99A201193874AF1F05 /* Dictionary+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92B2E85BC88E25FCAA99C6E9571BA8 /* Dictionary+SwiftDate.swift */; };
+		28B42F78B0AC1CE6779AD6E95199DB30 /* NSDate+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1253F0482FC43A6DD8E9C618CBFB00 /* NSDate+SwiftDate.swift */; };
+		29A8BD0D5B1552DD1CD71B7E884A34C7 /* SwiftDate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6BD70E80F5A312DC07CF01CDE6657E /* SwiftDate-dummy.m */; };
+		325337BD57C556CE0A3DB271EFA820D4 /* Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7EB635CAFA3D8C2B97722BD81D4E0A /* Additions.swift */; };
+		3D85160FB70CC27C9E9FEE088D5C3236 /* DateInRegion+StartEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33FD78CFCAE18201D937CAD80A9DB3 /* DateInRegion+StartEnd.swift */; };
+		4EF7F7CCE7B0E81063BABCBB16D997BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		53DCADE572DA4702C478DB3B528040B7 /* DateInRegion+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D27BB804E0372FC4F240698FB44486 /* DateInRegion+Components.swift */; };
+		7ABEC674344644E94FBADCBB8D54501F /* DateInRegion+Comparisons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E6CF943D4DAA8585D991E19727573 /* DateInRegion+Comparisons.swift */; };
+		9727BF58383F5E8D902384A65B280450 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690DD353258E91E0CC13AEBB8CC797F0 /* Region.swift */; };
+		990471FBD11812DCD478384BA2DD8CC4 /* DateInRegion+NSDatePort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B476B0E22D5B10896678A6A96CB91FE3 /* DateInRegion+NSDatePort.swift */; };
+		A6AAD53AEC3A837CC3CC1A7E1CC8A1F1 /* DateInRegion+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CBBD476FA9CE75B5FE551027DB0CD /* DateInRegion+Formatter.swift */; };
+		AD14DDC172DBDE00079F4E7581A24D95 /* DateInRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F376F45BDDBA92F059C3AB5FBD0B7 /* DateInRegion.swift */; };
+		AF12D14FA7603F468A59BD10D6AA9B5F /* Pods-AppLoadTime-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF459CFFA4B38F9E5963BF7B630D21A /* Pods-AppLoadTime-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2E0F1895F4BA9D8B98DBD6804E3B57B /* Pods-AppLoadTime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC42C1C5FE0836A9AE556C7FC11985C /* Pods-AppLoadTime-dummy.m */; };
+		B349560264DAC846A156F2F273CF2E55 /* NSCalendar+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79ADDA017FAF323B7C78B8B958B669 /* NSCalendar+SwiftDate.swift */; };
+		BC1DC7FD1936C31305DF1C9C57F18DEF /* SwiftDate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAC590DF5DDED4B0EC5A4F92D7A3C04 /* SwiftDate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD45C65500D7018110ECD50C213FF915 /* NSLocale+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A48D8EE3B8ACF98638DBAB0E431434B /* NSLocale+SwiftDate.swift */; };
+		C22D0C13A2FC9A31967C2FDC3321BE41 /* DateInRegion+Equations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE9EF8A5ED1DB9FE49D6ECB53EACE70 /* DateInRegion+Equations.swift */; };
+		C6635D36E04BBBB52D1D29B4EABC5968 /* DateInRegion+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336BE891E8CC0BF5E1C620F3F7CCA7F /* DateInRegion+Operations.swift */; };
+		CA88B84A9F7D1ECF006661A530A5FA55 /* NSDateInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF648FE5AD6AD64FB60E393BE7D22BC1 /* NSDateInterval.swift */; };
+		D0A87B67CA692764D2F7052C9F12347F /* NSTimeInterval+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D1A6A8967E0C410BA6E2D91DE7FD99 /* NSTimeInterval+SwiftDate.swift */; };
+		E685BEA062DEB68D67966EC8BE347A6B /* NSDateComponents+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6305C0638AE6E9AFD0082203AC95C83 /* NSDateComponents+SwiftDate.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D1B3E1DF78C2CE0A200E9D5F4A641903 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2740E86C4764FA34AD4805E74E37741;
+			remoteInfo = SwiftDate;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		071DE7D01A42CCC8D6A0C5AE8B4AF4A7 /* SwiftDate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftDate.modulemap; sourceTree = "<group>"; };
 		173ABCBAB597891D4FAF28022924221A /* Pods-AppLoadTime-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppLoadTime-frameworks.sh"; sourceTree = "<group>"; };
+		1A92B2E85BC88E25FCAA99C6E9571BA8 /* Dictionary+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+SwiftDate.swift"; path = "Sources/SwiftDate/Dictionary+SwiftDate.swift"; sourceTree = "<group>"; };
+		1D33FD78CFCAE18201D937CAD80A9DB3 /* DateInRegion+StartEnd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+StartEnd.swift"; path = "Sources/SwiftDate/DateInRegion+StartEnd.swift"; sourceTree = "<group>"; };
+		2336BE891E8CC0BF5E1C620F3F7CCA7F /* DateInRegion+Operations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Operations.swift"; path = "Sources/SwiftDate/DateInRegion+Operations.swift"; sourceTree = "<group>"; };
+		252E6CF943D4DAA8585D991E19727573 /* DateInRegion+Comparisons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Comparisons.swift"; path = "Sources/SwiftDate/DateInRegion+Comparisons.swift"; sourceTree = "<group>"; };
+		25D27BB804E0372FC4F240698FB44486 /* DateInRegion+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Components.swift"; path = "Sources/SwiftDate/DateInRegion+Components.swift"; sourceTree = "<group>"; };
+		280F376F45BDDBA92F059C3AB5FBD0B7 /* DateInRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInRegion.swift; path = Sources/SwiftDate/DateInRegion.swift; sourceTree = "<group>"; };
 		2FB145E780AF660811E650B949B86007 /* Pods-AppLoadTime-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppLoadTime-acknowledgements.plist"; sourceTree = "<group>"; };
+		34DC8587C0D07BA015278DE6B80DB93F /* SwiftDate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftDate.xcconfig; sourceTree = "<group>"; };
+		49D1A6A8967E0C410BA6E2D91DE7FD99 /* NSTimeInterval+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTimeInterval+SwiftDate.swift"; path = "Sources/SwiftDate/NSTimeInterval+SwiftDate.swift"; sourceTree = "<group>"; };
 		4CF459CFFA4B38F9E5963BF7B630D21A /* Pods-AppLoadTime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppLoadTime-umbrella.h"; sourceTree = "<group>"; };
 		4E32444B99BE825C292BE8A052200DDF /* Pods-AppLoadTime.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AppLoadTime.modulemap"; sourceTree = "<group>"; };
 		4EAC9F2C02BFF12A3F868B0779C6D2DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5506B037EBD41CF29BBF3DC336698369 /* Pods-AppLoadTime-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppLoadTime-resources.sh"; sourceTree = "<group>"; };
 		5CC42C1C5FE0836A9AE556C7FC11985C /* Pods-AppLoadTime-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppLoadTime-dummy.m"; sourceTree = "<group>"; };
-		622CF8E8FC272B8B02292C0E976A3500 /* Pods_AppLoadTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppLoadTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D1253F0482FC43A6DD8E9C618CBFB00 /* NSDate+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDate+SwiftDate.swift"; path = "Sources/SwiftDate/NSDate+SwiftDate.swift"; sourceTree = "<group>"; };
+		690DD353258E91E0CC13AEBB8CC797F0 /* Region.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Region.swift; path = Sources/SwiftDate/Region.swift; sourceTree = "<group>"; };
 		6C4055FDC08CE0DA10147DECBC435858 /* Pods-AppLoadTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppLoadTime.release.xcconfig"; sourceTree = "<group>"; };
+		882FDAEDB5A86FB7343B1BB98CAC0D39 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A48D8EE3B8ACF98638DBAB0E431434B /* NSLocale+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLocale+SwiftDate.swift"; path = "Sources/SwiftDate/NSLocale+SwiftDate.swift"; sourceTree = "<group>"; };
+		8A79ADDA017FAF323B7C78B8B958B669 /* NSCalendar+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSCalendar+SwiftDate.swift"; path = "Sources/SwiftDate/NSCalendar+SwiftDate.swift"; sourceTree = "<group>"; };
+		8A7EB635CAFA3D8C2B97722BD81D4E0A /* Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Additions.swift; path = Sources/SwiftDate/Additions.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		944404B27E8071B5368BB75DBB6E68F1 /* NSDateFormatter+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDateFormatter+SwiftDate.swift"; path = "Sources/SwiftDate/NSDateFormatter+SwiftDate.swift"; sourceTree = "<group>"; };
+		9EAC590DF5DDED4B0EC5A4F92D7A3C04 /* SwiftDate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-umbrella.h"; sourceTree = "<group>"; };
 		A95CE94DF05EFFCAB941BA92D1371A6C /* Pods-AppLoadTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppLoadTime.debug.xcconfig"; sourceTree = "<group>"; };
+		AB6BD70E80F5A312DC07CF01CDE6657E /* SwiftDate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftDate-dummy.m"; sourceTree = "<group>"; };
+		B476B0E22D5B10896678A6A96CB91FE3 /* DateInRegion+NSDatePort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+NSDatePort.swift"; path = "Sources/SwiftDate/DateInRegion+NSDatePort.swift"; sourceTree = "<group>"; };
+		BDE9EF8A5ED1DB9FE49D6ECB53EACE70 /* DateInRegion+Equations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Equations.swift"; path = "Sources/SwiftDate/DateInRegion+Equations.swift"; sourceTree = "<group>"; };
+		C17D4E53F0897B0FE62756C83EAA60A1 /* Pods_AppLoadTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppLoadTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6305C0638AE6E9AFD0082203AC95C83 /* NSDateComponents+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDateComponents+SwiftDate.swift"; path = "Sources/SwiftDate/NSDateComponents+SwiftDate.swift"; sourceTree = "<group>"; };
+		C630800FB1E99328737247245FCB4F07 /* NSTimeZone+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTimeZone+SwiftDate.swift"; path = "Sources/SwiftDate/NSTimeZone+SwiftDate.swift"; sourceTree = "<group>"; };
+		C8D060F91349F234767D3AC885EF680E /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D86CBBD476FA9CE75B5FE551027DB0CD /* DateInRegion+Formatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Formatter.swift"; path = "Sources/SwiftDate/DateInRegion+Formatter.swift"; sourceTree = "<group>"; };
 		E7197A2D67C03BE396B72826025754D4 /* Pods-AppLoadTime-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppLoadTime-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F415BF3AD1BAC53E348A8EF4134477B7 /* SwiftDate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-prefix.pch"; sourceTree = "<group>"; };
+		FF648FE5AD6AD64FB60E393BE7D22BC1 /* NSDateInterval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDateInterval.swift; path = Sources/SwiftDate/NSDateInterval.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		99280D5E0B433952EEBD3C300DD81726 /* Frameworks */ = {
+		78A38D197ABF08A4767D6CDF7FE0DE05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA3EE980C6023B70B6ACC1B3615438C6 /* Foundation.framework in Frameworks */,
+				219256A70412E64CB39D5D7A5AA3B489 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDCFC7499888E403FA47641FD5AAFF74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF7F7CCE7B0E81063BABCBB16D997BB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		093643A22A6921AC1F33407F610B3587 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				622CF8E8FC272B8B02292C0E976A3500 /* Pods_AppLoadTime.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		2A60639E4821489BC3FF2B3FA4B20476 /* Pods-AppLoadTime */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +132,33 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		64A164D81775FD8099A5D15FF37E378A /* SwiftDate */ = {
+			isa = PBXGroup;
+			children = (
+				8A7EB635CAFA3D8C2B97722BD81D4E0A /* Additions.swift */,
+				280F376F45BDDBA92F059C3AB5FBD0B7 /* DateInRegion.swift */,
+				252E6CF943D4DAA8585D991E19727573 /* DateInRegion+Comparisons.swift */,
+				25D27BB804E0372FC4F240698FB44486 /* DateInRegion+Components.swift */,
+				BDE9EF8A5ED1DB9FE49D6ECB53EACE70 /* DateInRegion+Equations.swift */,
+				D86CBBD476FA9CE75B5FE551027DB0CD /* DateInRegion+Formatter.swift */,
+				B476B0E22D5B10896678A6A96CB91FE3 /* DateInRegion+NSDatePort.swift */,
+				2336BE891E8CC0BF5E1C620F3F7CCA7F /* DateInRegion+Operations.swift */,
+				1D33FD78CFCAE18201D937CAD80A9DB3 /* DateInRegion+StartEnd.swift */,
+				1A92B2E85BC88E25FCAA99C6E9571BA8 /* Dictionary+SwiftDate.swift */,
+				8A79ADDA017FAF323B7C78B8B958B669 /* NSCalendar+SwiftDate.swift */,
+				5D1253F0482FC43A6DD8E9C618CBFB00 /* NSDate+SwiftDate.swift */,
+				C6305C0638AE6E9AFD0082203AC95C83 /* NSDateComponents+SwiftDate.swift */,
+				944404B27E8071B5368BB75DBB6E68F1 /* NSDateFormatter+SwiftDate.swift */,
+				FF648FE5AD6AD64FB60E393BE7D22BC1 /* NSDateInterval.swift */,
+				8A48D8EE3B8ACF98638DBAB0E431434B /* NSLocale+SwiftDate.swift */,
+				49D1A6A8967E0C410BA6E2D91DE7FD99 /* NSTimeInterval+SwiftDate.swift */,
+				C630800FB1E99328737247245FCB4F07 /* NSTimeZone+SwiftDate.swift */,
+				690DD353258E91E0CC13AEBB8CC797F0 /* Region.swift */,
+				DE3EE090B991B2F3F04C0478193DA4A4 /* Support Files */,
+			);
+			path = SwiftDate;
+			sourceTree = "<group>";
+		};
 		6F1D5873501F5C7FDAE8B1A5BC51816C /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,9 +172,18 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				093643A22A6921AC1F33407F610B3587 /* Products */,
+				AFA599F0772ACC8BF5858FD4FD1D6909 /* Pods */,
+				F4C7CC0BB07626A5A8B5B53F756C0360 /* Products */,
 				6F1D5873501F5C7FDAE8B1A5BC51816C /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		AFA599F0772ACC8BF5858FD4FD1D6909 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64A164D81775FD8099A5D15FF37E378A /* SwiftDate */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -100,35 +194,84 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE3EE090B991B2F3F04C0478193DA4A4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				882FDAEDB5A86FB7343B1BB98CAC0D39 /* Info.plist */,
+				071DE7D01A42CCC8D6A0C5AE8B4AF4A7 /* SwiftDate.modulemap */,
+				34DC8587C0D07BA015278DE6B80DB93F /* SwiftDate.xcconfig */,
+				AB6BD70E80F5A312DC07CF01CDE6657E /* SwiftDate-dummy.m */,
+				F415BF3AD1BAC53E348A8EF4134477B7 /* SwiftDate-prefix.pch */,
+				9EAC590DF5DDED4B0EC5A4F92D7A3C04 /* SwiftDate-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftDate";
+			sourceTree = "<group>";
+		};
+		F4C7CC0BB07626A5A8B5B53F756C0360 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C17D4E53F0897B0FE62756C83EAA60A1 /* Pods_AppLoadTime.framework */,
+				C8D060F91349F234767D3AC885EF680E /* SwiftDate.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		91DC92FB8B73FEF71DE230863A0A4C31 /* Headers */ = {
+		71E61612BA77DA0103D73E2D95D11322 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FA9362C4666C02A3B9ED0DE73807DBB /* Pods-AppLoadTime-umbrella.h in Headers */,
+				BC1DC7FD1936C31305DF1C9C57F18DEF /* SwiftDate-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE8F2EE91C625EDE71DB3738BD3EB72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF12D14FA7603F468A59BD10D6AA9B5F /* Pods-AppLoadTime-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9EA04CF662207384ECA3499D722582B6 /* Pods-AppLoadTime */ = {
+		66DAD2B5EC33AF62EED61444F0A80F6C /* Pods-AppLoadTime */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81B8AAC847B825D02B42CFCE4DA7691D /* Build configuration list for PBXNativeTarget "Pods-AppLoadTime" */;
+			buildConfigurationList = 268476794E4A92C44FEA09BAEB18D755 /* Build configuration list for PBXNativeTarget "Pods-AppLoadTime" */;
 			buildPhases = (
-				1129555345CE8857E8857E51FAE910E9 /* Sources */,
-				99280D5E0B433952EEBD3C300DD81726 /* Frameworks */,
-				91DC92FB8B73FEF71DE230863A0A4C31 /* Headers */,
+				89CE5CAB4B0468536A31300A3580A552 /* Sources */,
+				78A38D197ABF08A4767D6CDF7FE0DE05 /* Frameworks */,
+				BEE8F2EE91C625EDE71DB3738BD3EB72 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC02A5E7ED9DE0E30C080E93501E0DEA /* PBXTargetDependency */,
+			);
+			name = "Pods-AppLoadTime";
+			productName = "Pods-AppLoadTime";
+			productReference = C17D4E53F0897B0FE62756C83EAA60A1 /* Pods_AppLoadTime.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A2740E86C4764FA34AD4805E74E37741 /* SwiftDate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D3462133EF10EDC92723CDF960EDB6 /* Build configuration list for PBXNativeTarget "SwiftDate" */;
+			buildPhases = (
+				91869E3A614ACC9105BE56748806B186 /* Sources */,
+				BDCFC7499888E403FA47641FD5AAFF74 /* Frameworks */,
+				71E61612BA77DA0103D73E2D95D11322 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-AppLoadTime";
-			productName = "Pods-AppLoadTime";
-			productReference = 622CF8E8FC272B8B02292C0E976A3500 /* Pods_AppLoadTime.framework */;
+			name = SwiftDate;
+			productName = SwiftDate;
+			productReference = C8D060F91349F234767D3AC885EF680E /* SwiftDate.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -148,28 +291,65 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 093643A22A6921AC1F33407F610B3587 /* Products */;
+			productRefGroup = F4C7CC0BB07626A5A8B5B53F756C0360 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9EA04CF662207384ECA3499D722582B6 /* Pods-AppLoadTime */,
+				66DAD2B5EC33AF62EED61444F0A80F6C /* Pods-AppLoadTime */,
+				A2740E86C4764FA34AD4805E74E37741 /* SwiftDate */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1129555345CE8857E8857E51FAE910E9 /* Sources */ = {
+		89CE5CAB4B0468536A31300A3580A552 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEA61914DF1A87770804B418EDB8386E /* Pods-AppLoadTime-dummy.m in Sources */,
+				B2E0F1895F4BA9D8B98DBD6804E3B57B /* Pods-AppLoadTime-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91869E3A614ACC9105BE56748806B186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				325337BD57C556CE0A3DB271EFA820D4 /* Additions.swift in Sources */,
+				7ABEC674344644E94FBADCBB8D54501F /* DateInRegion+Comparisons.swift in Sources */,
+				53DCADE572DA4702C478DB3B528040B7 /* DateInRegion+Components.swift in Sources */,
+				C22D0C13A2FC9A31967C2FDC3321BE41 /* DateInRegion+Equations.swift in Sources */,
+				A6AAD53AEC3A837CC3CC1A7E1CC8A1F1 /* DateInRegion+Formatter.swift in Sources */,
+				990471FBD11812DCD478384BA2DD8CC4 /* DateInRegion+NSDatePort.swift in Sources */,
+				C6635D36E04BBBB52D1D29B4EABC5968 /* DateInRegion+Operations.swift in Sources */,
+				3D85160FB70CC27C9E9FEE088D5C3236 /* DateInRegion+StartEnd.swift in Sources */,
+				AD14DDC172DBDE00079F4E7581A24D95 /* DateInRegion.swift in Sources */,
+				247A8D6BEEA4BB99A201193874AF1F05 /* Dictionary+SwiftDate.swift in Sources */,
+				B349560264DAC846A156F2F273CF2E55 /* NSCalendar+SwiftDate.swift in Sources */,
+				28B42F78B0AC1CE6779AD6E95199DB30 /* NSDate+SwiftDate.swift in Sources */,
+				E685BEA062DEB68D67966EC8BE347A6B /* NSDateComponents+SwiftDate.swift in Sources */,
+				1FAE5B40D783825186381AD0895A94DA /* NSDateFormatter+SwiftDate.swift in Sources */,
+				CA88B84A9F7D1ECF006661A530A5FA55 /* NSDateInterval.swift in Sources */,
+				BD45C65500D7018110ECD50C213FF915 /* NSLocale+SwiftDate.swift in Sources */,
+				D0A87B67CA692764D2F7052C9F12347F /* NSTimeInterval+SwiftDate.swift in Sources */,
+				1CD795C0EED0FE842291E635855153FD /* NSTimeZone+SwiftDate.swift in Sources */,
+				9727BF58383F5E8D902384A65B280450 /* Region.swift in Sources */,
+				29A8BD0D5B1552DD1CD71B7E884A34C7 /* SwiftDate-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CC02A5E7ED9DE0E30C080E93501E0DEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftDate;
+			target = A2740E86C4764FA34AD4805E74E37741 /* SwiftDate */;
+			targetProxy = D1B3E1DF78C2CE0A200E9D5F4A641903 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		2EBB13BEC4352FF44DE5322F29DF519E /* Debug */ = {
+		331DA7BC76545AF56F3DB8DFE4C35BD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A95CE94DF05EFFCAB941BA92D1371A6C /* Pods-AppLoadTime.debug.xcconfig */;
 			buildSettings = {
@@ -196,6 +376,7 @@
 				PRODUCT_NAME = Pods_AppLoadTime;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -244,6 +425,69 @@
 			};
 			name = Debug;
 		};
+		5C27A5B0759485DFBC9DB59EF76F09BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C4055FDC08CE0DA10147DECBC435858 /* Pods-AppLoadTime.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AppLoadTime/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppLoadTime/Pods-AppLoadTime.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AppLoadTime;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA2D78508CFC8B8A001F01797D8D1FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34DC8587C0D07BA015278DE6B80DB93F /* SwiftDate.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDate/SwiftDate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftDate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -282,9 +526,9 @@
 			};
 			name = Release;
 		};
-		EC75BE198CE1CAC37BFC18D5779F7FAC /* Release */ = {
+		C3C8F3DD68C3FF046A05BFCE93F8722C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C4055FDC08CE0DA10147DECBC435858 /* Pods-AppLoadTime.release.xcconfig */;
+			baseConfigurationReference = 34DC8587C0D07BA015278DE6B80DB93F /* SwiftDate.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -295,18 +539,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AppLoadTime/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDate/SwiftDate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDate/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AppLoadTime/Pods-AppLoadTime.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AppLoadTime;
+				PRODUCT_NAME = SwiftDate;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -318,6 +558,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		268476794E4A92C44FEA09BAEB18D755 /* Build configuration list for PBXNativeTarget "Pods-AppLoadTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				331DA7BC76545AF56F3DB8DFE4C35BD5 /* Debug */,
+				5C27A5B0759485DFBC9DB59EF76F09BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -327,11 +576,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81B8AAC847B825D02B42CFCE4DA7691D /* Build configuration list for PBXNativeTarget "Pods-AppLoadTime" */ = {
+		90D3462133EF10EDC92723CDF960EDB6 /* Build configuration list for PBXNativeTarget "SwiftDate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2EBB13BEC4352FF44DE5322F29DF519E /* Debug */,
-				EC75BE198CE1CAC37BFC18D5779F7FAC /* Release */,
+				AA2D78508CFC8B8A001F01797D8D1FF3 /* Debug */,
+				C3C8F3DD68C3FF046A05BFCE93F8722C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
